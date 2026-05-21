@@ -1,0 +1,10 @@
+{
+	"name": "ls_keyvault_ecom",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://capstone04keyvault.vault.azure.net"
+		}
+	}
+}
