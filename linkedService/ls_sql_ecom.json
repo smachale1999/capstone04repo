@@ -1,0 +1,23 @@
+{
+	"name": "ls_sql_ecom",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "cspstone04server.database.windows.net",
+			"database": "capstonedb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sqladmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_keyvault_ecom",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sql-connection-string"
+			}
+		}
+	}
+}
